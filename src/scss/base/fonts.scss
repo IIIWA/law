@@ -1,0 +1,8 @@
+@use '../mixins/font-face';
+@include font-face.font-face('Gotham Pro', 'GothamPro-Light', 300);
+@include font-face.font-face('Gotham Pro', 'GothamPro', 400);
+@include font-face.font-face('Gotham Pro', 'GothamPro-Medium', 500);
+@include font-face.font-face('Gotham Pro', 'GothamPro-Bold', 700);
+@include font-face.font-face('Gotham Pro', 'GothamPro-Black', 900);
+@include font-face.font-face('Montserrat', 'Montserrat-VariableFont_wght', 100 900, normal);
+@include font-face.font-face('Montserrat', 'Montserrat-Italic-VariableFont_wght', 100 900, italic);
