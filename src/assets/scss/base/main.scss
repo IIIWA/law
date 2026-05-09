@@ -43,6 +43,7 @@ input {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 ul,
@@ -60,6 +61,37 @@ button {
 
 label {
     cursor: pointer;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+
+.body {
+    font-size: 16px;
+    color: var(--text-color-2);
+    background-color: var(--bg-colo);
+}
+
+.body--opened-menu .menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.body--opened-modal {
+    overflow: hidden;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100%;
 }
 
 .container {

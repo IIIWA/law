@@ -1,0 +1,256 @@
+.header__space {
+    height: 100px;
+}
+
+@media (max-width: 768px) {
+    .header__space {
+        height: 95.6px;
+    }
+}
+
+.header__top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    padding: 21.8px 0;
+    width: 100%;
+    background-color: var(--bg-color-menu);
+    transition: transform 0.3s ease;
+
+}
+
+.header__top--hidden {
+    transform: translateY(-100%);
+}
+
+.header__top .header__container {
+    padding: 0 15px;
+    max-width: 1430px;
+}
+
+.header__top-inner {
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header__logo-box {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+
+
+}
+
+.burger-icon {
+    position: relative;
+    display: none;
+    margin-right: 20px;
+    max-width: 58px;
+    max-height: 58px;
+}
+
+@media (max-width: 1200px) {
+    .burger-icon {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .burger-icon {
+        margin-right: 6px;
+    }
+
+    .burger-icon__burger {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.burger-icon__back {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    max-width: 44px;
+    max-height: 48px;
+
+}
+
+@media (max-width: 576px) {
+    .burger-icon__back {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+.burger-icon__back g {
+    fill: #1B8D32;
+}
+
+.header__logo {
+    z-index: 21;
+    flex-shrink: 0;
+    align-self: center;
+    margin-right: 16px;
+}
+
+.header .logo-icon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .header__logo .logo-full {
+        display: none;
+    }
+
+    .header__logo .logo-icon {
+        display: block;
+        width: 54px;
+        height: 64px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header__logo .logo-icon {
+        display: block;
+        width: 44px;
+        height: 52px;
+    }
+}
+
+
+.menu {
+    margin-right: 10px;
+    width: 100%;
+    max-width: 482px;
+    font-weight: 500;
+    color: var(--text-color-2);
+}
+
+@media (max-width: 1200px) {
+    .menu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 20;
+        display: flex;
+        overflow: hidden auto;
+        margin-right: 0;
+        padding: 120px 41px 30px;
+        width: 100%;
+        max-width: 340px;
+        background-color: white;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-400px);
+    }
+}
+
+@media (max-width: 375px) {
+    .menu {
+        width: 375px;
+        max-width: 375px;
+    }
+}
+
+.nav__list {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+@media (max-width: 1200px) {
+    .nav__list {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.nav__item {
+    /* margin-right: 16px; */
+    width: fit-content;
+}
+
+.nav__link {
+    display: block;
+    padding: 19px 10px;
+    height: 100%;
+}
+
+.header__contact-box {
+    z-index: 21;
+    display: flex;
+    gap: clamp(0rem, -12rem + 16vw, 4rem);
+    flex-shrink: 1;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    max-width: 332px;
+
+}
+
+.contact-logotypes {
+    display: flex;
+}
+
+.contact-logo__logo {
+    flex-shrink: 0;
+    margin-right: 16px;
+    height: 40px;
+}
+
+@media (max-width: 576px) {
+    .contact-logo__logo {
+        margin-right: 6px;
+    }
+
+    .contact-logo__logo img {
+        width: 36px;
+    }
+}
+
+.contact-tel__inner {
+    display: flex;
+    gap: 13.5px;
+    flex-direction: column;
+}
+
+@media (max-width: 576px) {
+    .contact-tel__inner {
+        gap: 6px;
+        font-size: 12px;
+    }
+}
+
+.contact-tel__number-box {
+    display: flex;
+    flex-shrink: 0;
+    font-weight: 500;
+}
+
+@media (max-width: 576px) {
+    .contact-tel__number-box img {
+        display: none;
+    }
+}
+
+.contact-tel__img {
+    flex-shrink: 0;
+    margin-right: 8px;
+
+}
+
+.contact-tel__numbers {
+    flex-shrink: 0;
+
+}
