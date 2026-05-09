@@ -4,10 +4,4 @@
 
 // Components
 @use './components/header';
-
-
-
-
-.header {
-    @include mixins.flex-justify-between;
-}
+@use './components/home/hero';
