@@ -1,5 +1,8 @@
 .our-services {
     &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 96px 0;
 
         @media (width <=762px) {
@@ -63,6 +66,8 @@
 
     &__card-title {
         width: 115px;
+        font-family: var(--second-family);
+        font-weight: 700;
 
     }
 
