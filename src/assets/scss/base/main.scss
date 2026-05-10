@@ -73,7 +73,7 @@ html {
 .body {
     font-size: 16px;
     color: var(--text-color-2);
-    background-color: var(--bg-color);
+    background-color: var(--bg-color-1);
 }
 
 .body--opened-menu .menu {
@@ -114,11 +114,23 @@ html {
     font-weight: 500;
     font-size: var(--font-size-text-1);
     text-align: center;
-    color: var(--text-color);
+    color: var(--text-color-1);
     background: var(--linear-gradient-1);
     transition: 0.4s;
 
     @media (width < 375px) {
         font-size: var(--font-size-text-2);
     }
+}
+
+.accent-color-1 {
+    color: var(--accent-color-1);
+}
+
+.accent-color-2 {
+    color: var(--accent-color-2);
+}
+
+.nowrap {
+    white-space: nowrap;
 }
