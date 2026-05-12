@@ -7,7 +7,8 @@ import { defineConfig } from 'vite';
 export default defineConfig({
     // ...
     root: './src',
-    base: './',
+    // base: './',
+    base: '/law/',
     sourcemap: true,
     server: {
         port: 3000,
