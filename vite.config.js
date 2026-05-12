@@ -7,6 +7,8 @@ import { defineConfig } from 'vite';
 export default defineConfig({
     // ...
     root: './src',
+    base: './',
+    sourcemap: true,
     server: {
         port: 3000,
         open: true,
@@ -18,6 +20,9 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: './src/index.html',
+                news: './src/news.html',
+                postPage: './src/post-page.html',
+                contacts: './src/contacts.html',
                 about: './src/about.html',
             },
         },

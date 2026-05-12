@@ -16,7 +16,7 @@
     }
 }
 
-@media (width > 576px) {
+@media (width < 576px) {
     div {
         display: flex;
     }

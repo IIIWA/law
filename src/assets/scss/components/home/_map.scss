@@ -1,0 +1,15 @@
+.map {
+    &__inner {
+        padding-bottom: 96px;
+
+        @media (width < 576px) {
+            padding-bottom: 60px;
+        }
+    }
+
+    &__content {
+        iframe {
+            border-radius: 24px;
+        }
+    }
+}

@@ -1,9 +1,12 @@
-// import Swiper JS
-import Swiper from 'swiper';
-// import Swiper styles
-import 'swiper/css';
-// ===============================----Usefull----==============================
-var swiper = new Swiper('.usefull__swiper-block', {
+// import Swiper bundle with all modules installed
+import Swiper from 'swiper/bundle';
+
+// import styles bundle
+import 'swiper/css/bundle';
+
+// ===============================----news----==============================
+
+var swiper = new Swiper('.news__swiper-block', {
     loop: true,
     slidesPerView: 3, // сколько слайдов одновременно
     spaceBetween: 20,
@@ -16,10 +19,10 @@ var swiper = new Swiper('.usefull__swiper-block', {
     },
     speed: 1000,
 
-    autoplay: {
-        delay: 4000, // время между слайдами (3 секунды)
-        disableOnInteraction: false, // не останавливать после клика
-    },
+    // autoplay: {
+    //     delay: 4000, // время между слайдами (3 секунды)
+    //     disableOnInteraction: false, // не останавливать после клика
+    // },
 
     breakpoints: {
         1200: {
@@ -54,3 +57,14 @@ var swiper = new Swiper('.usefull__swiper-block', {
         },
     },
 });
+
+// var swiper = new Swiper('.news__slider', {
+//     loop: true,
+
+//     slidesPerView: 3,
+//     spaceBetween: 20,
+//     pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true,
+//     },
+// });

@@ -1,0 +1,206 @@
+/* ================= MODAL OVERLAY ================= */
+
+.body--opened-modal__contact-form {
+    overflow: hidden;
+}
+
+/* Выбираем кнопки которые будут открывать эту модалку */
+.open-modal-form {}
+
+/* Выбираем кнопки которые будут открывать эту модалку */
+
+.modal__contact-form {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0 0 0 / 50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+
+}
+
+/* активное состояние */
+.body--opened-modal__contact-form .modal__contact-form {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ================= MODAL WINDOW ================= */
+
+.modal__contact-form-window {
+    position: relative;
+    border-radius: 20px;
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 20px 60px rgb(0 0 0 / 15%);
+    background: #fff;
+    transform: translateY(20px);
+    transition: 0.3s ease;
+}
+
+/* .modal__contact-form.active .modal__contact-form-window {
+    transform: translateY(0);
+} */
+
+/* ================= CLOSE BUTTON ================= */
+
+.modal__contact-form-cancel {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.modal__contact-form-cancel:hover {
+    background: rgb(0 0 0 / 5%);
+}
+
+/* ================= TEXT ================= */
+
+.modal__contact-form-title {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--title-color-first);
+}
+
+.modal__contact-form-subtitle {
+    margin-bottom: 25px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--title-color-first);
+}
+
+/* ================= FORM ================= */
+
+.modal__contact-form-form {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.modal__contact-form-name,
+.modal__contact-form-mail,
+.modal__contact-form-btn {
+    width: 100%;
+
+}
+
+.modal__contact-form-form input {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 0 15px;
+    height: 50px;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.modal__contact-form-form input:focus {
+    outline: none;
+    border-color: #000;
+}
+
+/* Чекбокс */
+.wpcf7-list-item label {
+    display: flex;
+    align-items: center;
+}
+
+.wpcf7-list-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.wpcf7-list-item-label {
+    line-height: 1.4;
+}
+
+.wpcf7-list-item a {
+    color: var(--accent-color);
+}
+
+/* ================= BUTTON ================= */
+
+.modal__contact-form-btn {
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    background: var(--linear-gradient-1);
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.modal__contact-form-btn:hover {
+    border: none;
+    color: #fff;
+    background: var(--linear-gradient-2);
+
+}
+
+.modal__success {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0 0 0 / 50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+
+.modal__success .modal-title {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--title-color-first);
+
+}
+
+.modal__success p {
+    text-align: center;
+}
+
+.body--opened-modal__success .modal__success {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal__success-window {
+    position: relative;
+    border-radius: 20px;
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+}
+
+.modal__success-cancel {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+}

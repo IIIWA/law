@@ -1,0 +1,133 @@
+.footer {
+    background-color: var(--bg-color-2);
+
+    &__inner {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-top: 72px;
+        padding-bottom: 41px;
+    }
+
+    &__background {
+        position: absolute;
+
+        // top: 0;
+        bottom: 0;
+        left: 93px;
+        z-index: 1;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__top-container {
+        z-index: 1;
+        display: flex;
+        gap: 40px;
+        justify-content: space-between;
+        margin-bottom: 48px;
+
+        @media (width <992px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    &__logo-contact-block {
+        display: flex;
+        gap: 38px;
+        flex-direction: column;
+
+
+    }
+
+
+    &__contact-cover {
+        display: flex;
+        flex-direction: column;
+
+        @media (width <609px) {
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__tel {
+        margin-bottom: 16px;
+        width: fit-content;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
+        color: white;
+    }
+
+    &__adress {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
+        color: white;
+    }
+
+    &__menu {
+        display: grid;
+        gap: 30px 81px;
+        align-items: start;
+        grid-template-columns: repeat(2, 1fr);
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            height: fit-content;
+        }
+    }
+
+    &__menu-link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1;
+        text-decoration: underline;
+        color: white;
+        text-decoration-thickness: 0.5px;
+        text-underline-offset: 3px;
+    }
+
+    &__messengers {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 321px;
+    }
+
+    &__cover-messengers {
+        display: flex;
+        gap: 16px;
+        align-self: start;
+    }
+
+    &__button {
+        align-self: start;
+        border-radius: 6px;
+        padding: 14px 24px;
+        width: 161px;
+        height: 44px;
+        color: white;
+        background: var(--linear-gradient-1);
+    }
+
+    &__bottom-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (width < 768px) {
+            gap: 16px;
+            flex-direction: column-reverse;
+            justify-content: center;
+        }
+    }
+
+    &__copyright {
+        color: white;
+    }
+}
