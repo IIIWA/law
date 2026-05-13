@@ -15,9 +15,9 @@ export default defineConfig({
         open: true,
     },
     build: {
-        outDir: '../dist',
-        emptyOutDir: true,
         assetsInlineLimit: 0,
+        emptyOutDir: true,
+        outDir: '../dist',
         rollupOptions: {
             input: {
                 main: './src/index.html',
@@ -26,6 +26,11 @@ export default defineConfig({
                 contacts: './src/contacts.html',
                 about: './src/about.html',
             },
+        },
+        minify: 'terser',
+        terserOptions: {
+            mangle: false,
+            compress: false,
         },
     },
     plugins: [
